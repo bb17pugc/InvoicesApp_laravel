@@ -43,7 +43,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
 
     Route::group(['prefix' => '{user_id}'], function () { 
 
-        Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'Statistics'])->name('dashboard');
+        Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'Dashboard'])->name('dashboard');
 
         Route::group(['prefix' => 'users'], function () { 
             Route::post('/add', [App\Http\Controllers\Admin\AdminsController::class, 'AddOrUpdate'])->name('add-user');
@@ -58,6 +58,11 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
         Route::group(['prefix' => 'wallet'], function () { 
             Route::post('/add', [App\Http\Controllers\Admin\WalletsController::class, 'Form'])->name('add-wallet');
             Route::get('/add', [App\Http\Controllers\Admin\WalletsController::class, 'Form'])->name('add-wallet-post');            
+        });
+
+        Route::group(['prefix' => 'settings'], function () { 
+            Route::post('/add', [App\Http\Controllers\Admin\SettingsController::class, 'Form'])->name('add-settings');
+            Route::get('/add', [App\Http\Controllers\Admin\SettingsController::class, 'Form'])->name('add-settings-post');            
         });
 
         

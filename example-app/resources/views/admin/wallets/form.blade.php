@@ -8,7 +8,7 @@
            
         <div class=" px-2 py-2 mx-4 my-4 col-lg-4 offset-lg-4 col-md-12 col-sm-12"  >
             <h3 class="text-center" >
-                <b>{{ __('Add Or Update User') }}</b>
+                <b>{{ __('Add Or Update User Balance') }}</b>
             </h3>
             
             <form method="POST" action="{{ route('add-wallet-post',Auth::user()->id) }}">
@@ -18,7 +18,7 @@
                 <input type="hidden" name="customer_id" value="{{$wallet->user_id}}" >
 
                 <div class="d-grid">
-                    <label for="balance" >{{ __('Name') }}</label>
+                    <label for="balance" >{{ __('Balance') }}</label>
                     <div >
                         <input value="{{$wallet->balance}}" id="balance" type="text" class="form-control @error('name') is-invalid @enderror" name="balance" value="{{ old('name') }}" required autocomplete="name" autofocus>
 

@@ -144,6 +144,9 @@
                         <li>
                             <a class="nav-item {{ route('users',Auth::user()->id) == Request::url() ? 'nav-item-selected' : ''  }}" href="{{ route('users',Auth::user()->id) }}">  <label for="">{{ __('Users') }}</label>  <i class="fa fa-angle-right" > </i></a>
                         </li>
+                        <li>
+                            <a class="nav-item {{ route('add-settings',Auth::user()->id) == Request::url() ? 'nav-item-selected' : ''  }}" href="{{ route('add-settings',Auth::user()->id) }}">  <label for="">{{ __('Settings') }}</label>  <i class="fa fa-angle-right" > </i></a>
+                        </li>
                      @else 
                             <li>
                             <a class="nav-item {{ route('customer-dashboard',Auth::user()->id) == Request::url() ? 'nav-item-selected' : ''  }} " href="{{ route('customer-dashboard',Auth::user()->id) }}">  <label for="">{{ __('Dashboard') }}</label>  <i class="fa fa-angle-right" > </i></a>
