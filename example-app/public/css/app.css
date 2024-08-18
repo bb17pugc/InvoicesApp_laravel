@@ -1,0 +1,380 @@
+.d-grid 
+{
+    display: grid;
+}
+.justify-content-center 
+{
+    justify-content: center;
+}
+ .pad-20
+ {
+   padding: 0px 20px 0px 20px;
+ }
+.width{
+    width:100%
+}
+.py-2 
+{
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.my-4 
+{
+    margin-top:10px;
+}
+.container-login-box{
+    padding: 20px;
+    background: white;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 1px grey;
+}
+
+.navbar-light 
+{
+    background-color: #f3f3f3;
+}
+.navbar-brand  {
+    display: none;
+}
+
+.d-flex-with-center{
+    display: flex;
+    justify-content: center;
+}
+.d-grid 
+{
+    display: grid;
+}
+
+.card-grey
+{
+    padding: 20px;
+    background-color: #eaeaea;
+}
+.card-header-title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.width-100{
+    width: 100%;
+}
+.collapse 
+{
+   display: none;
+}
+.border-danger 
+{
+   border-color: brown !important;
+}
+.container-change-password{
+   position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    background-color: rgb(0,0,0,0.6);
+    z-index: 1;
+}
+.modal-change-password{
+   position: absolute;
+   text-align: center;
+   justify-content: center;
+   right: 30%;
+   left: 30%;
+   top: 30%;
+   z-index: 1;
+   background: white;
+   padding: 20px;
+   border: #cccccc 1px solid;
+   border-radius: 10px;
+}
+.slider img {
+   width: 100%;
+}
+.btn 
+{
+       /* text-align: center; */
+       align-items: center !important;
+       /* justify-content: center; */
+       display: inline-block !important;
+}
+td
+{
+   max-width: 100px;
+   /* width: 100px; */
+   text-overflow: clip;
+   word-wrap: break-word;
+}
+.slider{
+   justify-content: flex-start !important;
+   display: flex;
+   width: 50%;
+   max-width: 50%;
+   overflow-x: auto;
+}
+.my-4 
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.no-padding
+ {
+    padding: 0px !important;
+ }
+
+ .no-margin
+ {
+    margin: 0px !important;
+ }
+
+ .list-side-bar 
+ {
+    list-style-type: none;
+    padding: 0px !important;
+
+ }
+ .nav-item-selected 
+ {
+   background-color: #ebebeb;
+ }
+ .request-pending{
+   background-color: #ebebeb;font-weight: 900;
+ }
+ .box-description{
+   resize: none;
+    width: 100%;
+    border: solid 1px #bfbaba;
+    border-radius: 5px;
+ }
+ .item-pivacy-policy div 
+ {
+   margin-left: 10px;
+ }
+ .item-pivacy-policy 
+ {
+   margin: 20px;
+ }
+ .container-privacy-policy 
+ {
+   padding: 10px;
+   border-radius: 10px;
+ }
+ .px-2  
+ {
+      padding-left: 10px;
+      padding-right:10px ;
+ }
+.justify-content-center{   
+   justify-content: center;
+}
+ .px-y  
+ {
+      padding-top: 10px;
+      padding-bottom:10px ;
+ }
+
+.bg-white 
+{
+   background-color: white;
+}
+.opacity-3{
+   opacity: 0.3;
+}
+.UNSUBSCRIBED 
+{
+   color:grey;
+   border:solid 1px grey;
+   border-radius: 5px;
+   padding: 5px;
+}
+.align-items-center{
+   align-items: center;
+}
+.invalid-feedback 
+{
+   color: brown;
+}
+.ACTIVE {
+   color: green;
+   border:solid 1px green;
+   border-radius: 5px;
+   padding: 5px;
+}
+.justify-content-start 
+{
+   justify-content: start;
+}
+.word-break 
+{
+   overflow: hidden;
+   word-wrap: normal;
+   word-break: break-all;
+}
+
+.BLOCKED {
+   color: brown;
+   border:solid 1px brown;
+   border-radius: 5px;
+   padding: 5px;
+}
+#lblLogo
+{
+   display: flex;
+   min-width: 250px;
+   min-height: 250px;
+   justify-content: center;
+    align-items: center;
+   
+}
+
+.container-settings 
+{
+   height: 100vh;background: #ebebeb;
+   margin: 0px;
+   position: absolute;
+   right: 0;
+   left: 0; 
+}
+.item-setting 
+{
+   padding: 20px;
+    text-align: left;
+    justify-content: start;
+    border: solid 1px #e2e2e2;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.screen-hieght
+{
+   height: 100vh;
+   overflow: auto;
+}
+ .nav-item 
+ {
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    color: #8d8d8d;
+    font-family: sans-serif;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .row-full-size td 
+ {
+    border: none;
+    text-align: center;
+    min-width: 500px;
+ }
+ .row-full-size{
+    height: 1500px;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(0,0,0,0.8) !important;
+    justify-content: center;
+    flex: auto;
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    left: 0;
+    /* background-color: white; */
+    display: grid;
+    z-index: 1;
+ }
+ .nav-item label 
+ {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
+ }
+
+ .image-full-size{
+    top: 0;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    border: none !important;
+    border-radius: 0px !important;
+    bottom: 0;
+    right: 0;
+    left: 0;
+ }
+ .pin-image{
+   margin: 10px;
+   border-radius: 10px;
+   width: 100;
+   height: 100;
+   border: solid 3px grey;
+ }
+ aside 
+ {
+    height: 100vh;
+    background-color: white;
+    box-shadow: 2px 10px 20px 0px #b1b1b1;
+ }
+ .nav-brand{
+    box-shadow:1px 1px 1px 1px #e7e7e7;
+ }
+ .justify-content-start{
+  justify-content: start;  
+ }
+ .lbl-logo{
+    display: block;
+    color: #a0a0a0;
+ }
+
+ .logo{
+    cursor: pointer;
+    border-radius: 100px;
+    border: solid 5px #ffffff;
+    box-shadow: 0px 0px 10px 1px #848484;
+ }
+
+ .container-logo{
+    border: solid 1px #dadada;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0.3px #cbcbcb;
+ }
+ .mx-4 
+ {
+    margin: 0px 0px 0px 10px !important;
+ }
+ .mxy-4 
+ {
+    margin: 0px 0px 0px 0px;
+ }
+ .d-flex 
+ {
+    display: flex;
+ }
+
+ .item-statistics{
+    background-color: white;
+    box-shadow: 0px 0px 20px 1px #c6c1c1;
+    border-radius: 20px;
+    margin: 20px;
+ }
+
+ .icon-statistics{
+    
+    color: #a7a7a7;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px grey;
+ }
+ .label-statistics{
+    
+    margin: 20px;
+ }
+ .font-50 
+ {
+    font-size: 30px !important;
+ }
