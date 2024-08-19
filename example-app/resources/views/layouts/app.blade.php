@@ -125,12 +125,12 @@
                         <a class="nav-item nav-brand d-block" href="#">  
                                 <div>
                                 <img  width="35" height="35" src="/images/logo.png" alt="">
-                                <label  class="label-username" >{{ Auth::user()->name }}</label>
+                                <label  class="label-username text-black" >{{ Auth::user()->name }}</label>
                                 </div>
 
-                                <i class="fas fa-key btn btn-default pull-right" onclick="openModalChangePassword()" > 
+                                <!-- <i class="fas fa-key btn btn-default pull-right" onclick="openModalChangePassword()" > 
 
-                                </i>     
+                                </i>      -->
                                 <!-- modal change sign up password -->                               
                         </a>
 
@@ -151,9 +151,9 @@
                             <li>
                             <a class="nav-item {{ route('booker-dashboard',Auth::user()->id) == Request::url() ? 'nav-item-selected' : ''  }} " href="{{ route('booker-dashboard',Auth::user()->id) }}">  <label for="">{{ __('Dashboard') }}</label>  <i class="fa fa-angle-right" > </i></a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a class="nav-item {{ route('history-booker',Auth::user()->id) == Request::url() ? 'nav-item-selected' : ''  }}" href="{{ route('history-booker',Auth::user()->id) }}">  <label for="">{{ __('History') }}</label>  <i class="fa fa-angle-right" > </i></a>
-                            </li>
+                            </li> -->
                      @endif
 
                    

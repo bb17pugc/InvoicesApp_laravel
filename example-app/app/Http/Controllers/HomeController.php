@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Constants\Constants;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,15 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $role = Auth::user()->role;
+        if($role == Constants::SUPER_ADMIN)
+        {
+            return redirect()->route('dashboard', ['user_id'=>Auth::user()->id]); 
+        }
+        else 
+        {
+            return redirect()->route('upload-csv-file-result', ['payment_id'=>$Payment->id, 'user_id'=>Auth::user()->id]); 
+        }
         return view('home');
     }
 }

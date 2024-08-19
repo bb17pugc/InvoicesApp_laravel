@@ -14,6 +14,10 @@
    font-weight: 400;
 }
 
+.text-black {
+   color: black;
+}
+
 .justify-content-space-between {
    justify-content: space-between;
 }

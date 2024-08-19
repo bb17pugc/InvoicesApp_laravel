@@ -40,7 +40,7 @@
                     </div>
                     <hr>
                     <div class="col-lg-12 col-md-12 col-sm-12" >
-                                <table class="table table-bordered" >
+                                <table id="table" class="table table-bordered" >
                                     <thead>
                                         <tr style="background-color:#eaeaea" >
                                         @foreach(str_getcsv($fileContents[0]) as $index=>$item) 

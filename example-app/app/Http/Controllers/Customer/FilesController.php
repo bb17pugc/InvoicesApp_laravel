@@ -48,6 +48,9 @@ class FilesController extends Controller
         $Payment->csv_files_id = $csvFile->id;
         $Payment->user_id = Auth::user()->id;   
         $Payment->save();
+
+        Session::flash('message', 'File uploaded successfully'); 
+        Session::flash('alert-class', 'alert-success'); 
         // foreach ($fileContents as $index=>$line) {
         //     if($index > 0)
         //     {

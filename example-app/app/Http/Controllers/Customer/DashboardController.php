@@ -8,10 +8,14 @@ use Auth;
 use App\Models\CsvFile;
 use App\Models\Wallet;
 use App\Models\Payment;
-use \Carbon\Carbon;
+use \Carbon\Carbon; 
 
 class DashboardController extends Controller
 {
+       public function History()
+       {
+         
+       }
        public function Dashboard()
        {
           $user_id=Auth::user()->id;
