@@ -149,10 +149,10 @@
                         </li>
                      @else 
                             <li>
-                            <a class="nav-item {{ route('customer-dashboard',Auth::user()->id) == Request::url() ? 'nav-item-selected' : ''  }} " href="{{ route('customer-dashboard',Auth::user()->id) }}">  <label for="">{{ __('Dashboard') }}</label>  <i class="fa fa-angle-right" > </i></a>
+                            <a class="nav-item {{ route('booker-dashboard',Auth::user()->id) == Request::url() ? 'nav-item-selected' : ''  }} " href="{{ route('booker-dashboard',Auth::user()->id) }}">  <label for="">{{ __('Dashboard') }}</label>  <i class="fa fa-angle-right" > </i></a>
                             </li>
                             <li>
-                                <a class="nav-item {{ route('users',Auth::user()->id) == Request::url() ? 'nav-item-selected' : ''  }}" href="{{ route('users',Auth::user()->id) }}">  <label for="">{{ __('History') }}</label>  <i class="fa fa-angle-right" > </i></a>
+                                <a class="nav-item {{ route('history-booker',Auth::user()->id) == Request::url() ? 'nav-item-selected' : ''  }}" href="{{ route('history-booker',Auth::user()->id) }}">  <label for="">{{ __('History') }}</label>  <i class="fa fa-angle-right" > </i></a>
                             </li>
                      @endif
 

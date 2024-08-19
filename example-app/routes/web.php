@@ -70,16 +70,19 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
 });
 
 
-Route::group(['prefix' => 'customers','middleware' => 'auth'], function () { 
+Route::group(['prefix' => 'bookers','middleware' => 'auth'], function () { 
     
     Route::group(['prefix' => '{user_id}'], function () { 
 
-        Route::get('/dashboard', [App\Http\Controllers\Customer\DashboardController::class, 'Dashboard'])->name('customer-dashboard');
-
+        Route::get('/dashboard', [App\Http\Controllers\Customer\DashboardController::class, 'Dashboard'])->name('booker-dashboard');
+        Route::get('/history', [App\Http\Controllers\Customer\DashboardController::class, 'History'])->name('history-booker');
         Route::group(['prefix' => 'files'], function () { 
             Route::post('/upload-file', [App\Http\Controllers\Customer\FilesController::class, 'UploadFile'])->name('upload-csv-file');
             Route::get('/upload-file', [App\Http\Controllers\Customer\FilesController::class, 'UploadFile'])->name('upload-csv-file');            
+            Route::get('/results/{payment_id}', [App\Http\Controllers\Customer\FilesController::class, 'Result'])->name('upload-csv-file-result');            
+        
         });
+        
         
     }); 
 });

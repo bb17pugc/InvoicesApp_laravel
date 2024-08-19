@@ -12,6 +12,7 @@ class Wallet extends Model
         'id',
         'balance',
         'user_id',
+        'updated_at',
         'status',
     ];
 

@@ -26,7 +26,7 @@
                         @enderror
                     </div>
                 </div>
-
+                <br>
                 <div class="d-grid">
                         <button class="btn btn-primary" type="submit" >
                             {{ __('Add') }}

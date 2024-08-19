@@ -5,15 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CsvFile extends Model
+class Setting extends Model
 {
-    protected $table = 'csv_files';
+    use HasFactory;
+    protected $table = 'settings';
 
     use HasFactory;
     protected $fillable = [
-        'id',
-        'path',
-        'user_id',
+        'comission',
         'status',
     ];
+
 }
